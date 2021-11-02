@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211101 23:20:22.762" rpa="false" schemaversion="2">
+<suite id="s1" name="PrimeHero - Curso" source="C:\Users\willi\Desktop\PrimeHero - Curso">
+<suite id="s1-s1" name="Tests" source="C:\Users\willi\Desktop\PrimeHero - Curso\tests">
+<suite id="s1-s1-s1" name="Exercicios" source="C:\Users\willi\Desktop\PrimeHero - Curso\tests\exercicios.robot">
+<test id="s1-s1-s1-t1" name="Cenário: Imprimindo informações da pessoa">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${PESSOA.nome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.835" endtime="20211101 23:20:22.838"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.sobrenome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.839" endtime="20211101 23:20:22.840"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.idade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.841" endtime="20211101 23:20:22.844"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.846" endtime="20211101 23:20:22.849"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.cpf}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.849" endtime="20211101 23:20:22.852"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.genero}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.853" endtime="20211101 23:20:22.857"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.833" endtime="20211101 23:20:22.857"/>
+</test>
+<test id="s1-s1-s1-t2" name="Cenário: Imprimindo lista de frutas uma por vez">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${FRUTAS[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.863" endtime="20211101 23:20:22.866"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.867" endtime="20211101 23:20:22.869"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.870" endtime="20211101 23:20:22.875"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[3]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.876" endtime="20211101 23:20:22.879"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[4]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.880" endtime="20211101 23:20:22.882"/>
+</kw>
+<tag>LISTA</tag>
+<status status="PASS" starttime="20211101 23:20:22.861" endtime="20211101 23:20:22.882"/>
+</test>
+<test id="s1-s1-s1-t3" name="Cenário: Somando dois valores">
+<kw name="Somar os numeros &quot;56&quot; e &quot;24&quot;" sourcename="Somar os numeros &quot;${NUM_A}&quot; e &quot;${NUM_B}&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${SOMA}</var>
+<arg>${NUM_A}+${NUM_B}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211101 23:20:22.890" level="INFO">${SOMA} = 80</msg>
+<status status="PASS" starttime="20211101 23:20:22.889" endtime="20211101 23:20:22.890"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SOMA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.890" endtime="20211101 23:20:22.891"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.887" endtime="20211101 23:20:22.891"/>
+</kw>
+<tag>SOMA</tag>
+<status status="PASS" starttime="20211101 23:20:22.885" endtime="20211101 23:20:22.892"/>
+</test>
+<test id="s1-s1-s1-t4" name="Cenário: Concatenar Email">
+<kw name="Criar email">
+<arg>niedja</arg>
+<arg>souza</arg>
+<arg>34</arg>
+<kw name="Catenate" library="BuiltIn">
+<var>${EMAIL}</var>
+<arg>SEPARATOR=_</arg>
+<arg>${nome}</arg>
+<arg>${sobrenome}</arg>
+<arg>${idade}@robot.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211101 23:20:22.897" level="INFO">${EMAIL} = niedja_souza_34@robot.com</msg>
+<status status="PASS" starttime="20211101 23:20:22.897" endtime="20211101 23:20:22.897"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EMAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.897" endtime="20211101 23:20:22.898"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.896" endtime="20211101 23:20:22.899"/>
+</kw>
+<tag>EMAIL</tag>
+<status status="PASS" starttime="20211101 23:20:22.894" endtime="20211101 23:20:22.900"/>
+</test>
+<test id="s1-s1-s1-t5" name="Cenário: Contar de 0 a 9">
+<kw name="Contar de 0 a 9">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>0</value>
+<value>9</value>
+<iter>
+<var name="${COUNT}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.907" endtime="20211101 23:20:22.907"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.906" endtime="20211101 23:20:22.908"/>
+</iter>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.908" endtime="20211101 23:20:22.909"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.908" endtime="20211101 23:20:22.909"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.911" endtime="20211101 23:20:22.913"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.910" endtime="20211101 23:20:22.913"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.914" endtime="20211101 23:20:22.915"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.914" endtime="20211101 23:20:22.915"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.916" endtime="20211101 23:20:22.917"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.915" endtime="20211101 23:20:22.917"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.921" endtime="20211101 23:20:22.923"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.918" endtime="20211101 23:20:22.924"/>
+</iter>
+<iter>
+<var name="${COUNT}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.929" endtime="20211101 23:20:22.934"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.926" endtime="20211101 23:20:22.934"/>
+</iter>
+<iter>
+<var name="${COUNT}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.935" endtime="20211101 23:20:22.937"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.934" endtime="20211101 23:20:22.938"/>
+</iter>
+<iter>
+<var name="${COUNT}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.938" endtime="20211101 23:20:22.939"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.938" endtime="20211101 23:20:22.940"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:22.906" endtime="20211101 23:20:22.940"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:22.905" endtime="20211101 23:20:22.940"/>
+</kw>
+<tag>CONTAR</tag>
+<status status="PASS" starttime="20211101 23:20:22.902" endtime="20211101 23:20:22.941"/>
+</test>
+<test id="s1-s1-s1-t6" name="Cenário: Percorrer lista de frutas">
+<kw name="Percorrer lista de frutas">
+<kw name="Create List" library="BuiltIn">
+<var>@{FRUTAS}</var>
+<arg>banana</arg>
+<arg>maçã</arg>
+<arg>laranja</arg>
+<arg>mamão</arg>
+<arg>morango</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211101 23:20:22.946" level="INFO">@{FRUTAS} = [ banana | maçã | laranja | mamão | morango ]</msg>
+<status status="PASS" starttime="20211101 23:20:22.946" endtime="20211101 23:20:22.946"/>
+</kw>
+<for flavor="IN">
+<var>${FRUTA}</var>
+<value>@{FRUTAS}</value>
+<iter>
+<var name="${FRUTA}">banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.947" endtime="20211101 23:20:22.947"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.947" endtime="20211101 23:20:22.948"/>
+</iter>
+<iter>
+<var name="${FRUTA}">maçã</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.948" endtime="20211101 23:20:22.949"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.948" endtime="20211101 23:20:22.949"/>
+</iter>
+<iter>
+<var name="${FRUTA}">laranja</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.985" endtime="20211101 23:20:22.991"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.949" endtime="20211101 23:20:22.991"/>
+</iter>
+<iter>
+<var name="${FRUTA}">mamão</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:22.993" endtime="20211101 23:20:23.001"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:22.992" endtime="20211101 23:20:23.001"/>
+</iter>
+<iter>
+<var name="${FRUTA}">morango</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.002" endtime="20211101 23:20:23.004"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.002" endtime="20211101 23:20:23.005"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:22.946" endtime="20211101 23:20:23.005"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:22.945" endtime="20211101 23:20:23.005"/>
+</kw>
+<tag>FRUTAS</tag>
+<status status="PASS" starttime="20211101 23:20:22.943" endtime="20211101 23:20:23.009"/>
+</test>
+<test id="s1-s1-s1-t7" name="Cenário:">
+<kw name="Criar frase">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${COUNT}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.023" endtime="20211101 23:20:23.026"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.021" endtime="20211101 23:20:23.026"/>
+</iter>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.028" endtime="20211101 23:20:23.031"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.027" endtime="20211101 23:20:23.031"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.032" endtime="20211101 23:20:23.034"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.031" endtime="20211101 23:20:23.034"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.035" endtime="20211101 23:20:23.036"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.035" endtime="20211101 23:20:23.039"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.040" endtime="20211101 23:20:23.041"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.040" endtime="20211101 23:20:23.041"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.042" endtime="20211101 23:20:23.043"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.042" endtime="20211101 23:20:23.043"/>
+</iter>
+<iter>
+<var name="${COUNT}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.043" endtime="20211101 23:20:23.046"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.043" endtime="20211101 23:20:23.046"/>
+</iter>
+<iter>
+<var name="${COUNT}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.047" endtime="20211101 23:20:23.048"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.047" endtime="20211101 23:20:23.048"/>
+</iter>
+<iter>
+<var name="${COUNT}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.048" endtime="20211101 23:20:23.049"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.048" endtime="20211101 23:20:23.050"/>
+</iter>
+<iter>
+<var name="${COUNT}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.050" endtime="20211101 23:20:23.051"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.050" endtime="20211101 23:20:23.051"/>
+</iter>
+<iter>
+<var name="${COUNT}">10</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.052" endtime="20211101 23:20:23.054"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.051" endtime="20211101 23:20:23.054"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:23.020" endtime="20211101 23:20:23.055"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:23.020" endtime="20211101 23:20:23.055"/>
+</kw>
+<kw name="Criar frase">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${COUNT}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.057" endtime="20211101 23:20:23.058"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.056" endtime="20211101 23:20:23.058"/>
+</iter>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.059" endtime="20211101 23:20:23.060"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.059" endtime="20211101 23:20:23.061"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.063" endtime="20211101 23:20:23.065"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.062" endtime="20211101 23:20:23.065"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.066" endtime="20211101 23:20:23.067"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.065" endtime="20211101 23:20:23.067"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.067" endtime="20211101 23:20:23.068"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.067" endtime="20211101 23:20:23.069"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.069" endtime="20211101 23:20:23.071"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.069" endtime="20211101 23:20:23.072"/>
+</iter>
+<iter>
+<var name="${COUNT}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.072" endtime="20211101 23:20:23.073"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.072" endtime="20211101 23:20:23.073"/>
+</iter>
+<iter>
+<var name="${COUNT}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.074" endtime="20211101 23:20:23.075"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.074" endtime="20211101 23:20:23.075"/>
+</iter>
+<iter>
+<var name="${COUNT}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.076" endtime="20211101 23:20:23.076"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.075" endtime="20211101 23:20:23.076"/>
+</iter>
+<iter>
+<var name="${COUNT}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.080" endtime="20211101 23:20:23.081"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.079" endtime="20211101 23:20:23.081"/>
+</iter>
+<iter>
+<var name="${COUNT}">10</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.081" endtime="20211101 23:20:23.082"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.081" endtime="20211101 23:20:23.082"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:23.056" endtime="20211101 23:20:23.083"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:23.056" endtime="20211101 23:20:23.083"/>
+</kw>
+<tag>Criar</tag>
+<status status="PASS" starttime="20211101 23:20:23.018" endtime="20211101 23:20:23.084"/>
+</test>
+<test id="s1-s1-s1-t8" name="Cenário: Percorrer lista de Países">
+<kw name="Percorrer lista de Países">
+<kw name="Create List" library="BuiltIn">
+<var>@{PAÍSES}</var>
+<arg>Brasil</arg>
+<arg>Japão</arg>
+<arg>Ucrania</arg>
+<arg>Portugal</arg>
+<arg>Nigéria</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211101 23:20:23.089" level="INFO">@{PAÍSES} = [ Brasil | Japão | Ucrania | Portugal | Nigéria ]</msg>
+<status status="PASS" starttime="20211101 23:20:23.089" endtime="20211101 23:20:23.089"/>
+</kw>
+<for flavor="IN">
+<var>${PAÍS}</var>
+<value>@{PAÍSES}</value>
+<iter>
+<var name="${PAÍS}">Brasil</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAÍSES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.090" endtime="20211101 23:20:23.091"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.090" endtime="20211101 23:20:23.091"/>
+</iter>
+<iter>
+<var name="${PAÍS}">Japão</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAÍSES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.091" endtime="20211101 23:20:23.092"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.091" endtime="20211101 23:20:23.092"/>
+</iter>
+<iter>
+<var name="${PAÍS}">Ucrania</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAÍSES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.094" endtime="20211101 23:20:23.096"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.093" endtime="20211101 23:20:23.096"/>
+</iter>
+<iter>
+<var name="${PAÍS}">Portugal</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAÍSES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.096" endtime="20211101 23:20:23.097"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.096" endtime="20211101 23:20:23.098"/>
+</iter>
+<iter>
+<var name="${PAÍS}">Nigéria</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAÍSES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.098" endtime="20211101 23:20:23.099"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.098" endtime="20211101 23:20:23.099"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:23.090" endtime="20211101 23:20:23.099"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:23.088" endtime="20211101 23:20:23.100"/>
+</kw>
+<tag>PAÍSES</tag>
+<status status="PASS" starttime="20211101 23:20:23.087" endtime="20211101 23:20:23.101"/>
+</test>
+<test id="s1-s1-s1-t9" name="Cenário: Tomando decisão da cor do carro">
+<kw name="Escolher um carro">
+<arg>'Prata'</arg>
+<if>
+<branch type="IF" condition="${COR_CARRO}=='Preto'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEu gostaria de comprar esse carro</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.106" endtime="20211101 23:20:23.106"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.106" endtime="20211101 23:20:23.106"/>
+</branch>
+<branch type="ELSE IF" condition="${COR_CARRO}=='Prata'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEu também gosto dessa cor</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.107" endtime="20211101 23:20:23.108"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.107" endtime="20211101 23:20:23.108"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nNão gostei das cores que me mostraram</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.108" endtime="20211101 23:20:23.108"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.108" endtime="20211101 23:20:23.108"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.106" endtime="20211101 23:20:23.109"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.105" endtime="20211101 23:20:23.109"/>
+</kw>
+<tag>CARRO</tag>
+<status status="PASS" starttime="20211101 23:20:23.103" endtime="20211101 23:20:23.110"/>
+</test>
+<test id="s1-s1-s1-t10" name="Cenário: Listar números 5 e 8">
+<kw name="Listar números 5 ou 8">
+<for flavor="IN RANGE">
+<var>${NUMERO}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${NUMERO}">0</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.116" endtime="20211101 23:20:23.116"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.116" endtime="20211101 23:20:23.116"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.117" endtime="20211101 23:20:23.117"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.116" endtime="20211101 23:20:23.117"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.115" endtime="20211101 23:20:23.117"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.115" endtime="20211101 23:20:23.117"/>
+</iter>
+<iter>
+<var name="${NUMERO}">1</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.118" endtime="20211101 23:20:23.118"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.118" endtime="20211101 23:20:23.118"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.119" endtime="20211101 23:20:23.119"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.119" endtime="20211101 23:20:23.120"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.117" endtime="20211101 23:20:23.120"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.117" endtime="20211101 23:20:23.120"/>
+</iter>
+<iter>
+<var name="${NUMERO}">2</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.121" endtime="20211101 23:20:23.121"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.121" endtime="20211101 23:20:23.121"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.122" endtime="20211101 23:20:23.122"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.122" endtime="20211101 23:20:23.122"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.120" endtime="20211101 23:20:23.122"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.120" endtime="20211101 23:20:23.122"/>
+</iter>
+<iter>
+<var name="${NUMERO}">3</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.123" endtime="20211101 23:20:23.123"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.122" endtime="20211101 23:20:23.123"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.124" endtime="20211101 23:20:23.124"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.124" endtime="20211101 23:20:23.124"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.122" endtime="20211101 23:20:23.124"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.122" endtime="20211101 23:20:23.124"/>
+</iter>
+<iter>
+<var name="${NUMERO}">4</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.126" endtime="20211101 23:20:23.126"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.126" endtime="20211101 23:20:23.126"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.127" endtime="20211101 23:20:23.127"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.126" endtime="20211101 23:20:23.127"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.125" endtime="20211101 23:20:23.127"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.125" endtime="20211101 23:20:23.127"/>
+</iter>
+<iter>
+<var name="${NUMERO}">5</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.129" endtime="20211101 23:20:23.131"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.129" endtime="20211101 23:20:23.132"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.132" endtime="20211101 23:20:23.132"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.132" endtime="20211101 23:20:23.132"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.128" endtime="20211101 23:20:23.132"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.128" endtime="20211101 23:20:23.132"/>
+</iter>
+<iter>
+<var name="${NUMERO}">6</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.133"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.133"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.133"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.133"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.133"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.132" endtime="20211101 23:20:23.133"/>
+</iter>
+<iter>
+<var name="${NUMERO}">7</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.134" endtime="20211101 23:20:23.134"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.134"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.134" endtime="20211101 23:20:23.134"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.134" endtime="20211101 23:20:23.134"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.134"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.133" endtime="20211101 23:20:23.134"/>
+</iter>
+<iter>
+<var name="${NUMERO}">8</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.135" endtime="20211101 23:20:23.135"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.135" endtime="20211101 23:20:23.135"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211101 23:20:23.136" endtime="20211101 23:20:23.137"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.136" endtime="20211101 23:20:23.138"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.135" endtime="20211101 23:20:23.138"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.135" endtime="20211101 23:20:23.138"/>
+</iter>
+<iter>
+<var name="${NUMERO}">9</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.139" endtime="20211101 23:20:23.139"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.139" endtime="20211101 23:20:23.139"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.139" endtime="20211101 23:20:23.140"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.139" endtime="20211101 23:20:23.140"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.139" endtime="20211101 23:20:23.140"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.138" endtime="20211101 23:20:23.140"/>
+</iter>
+<iter>
+<var name="${NUMERO}">10</var>
+<if>
+<branch type="IF" condition="${NUMERO}==5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eu estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.141" endtime="20211101 23:20:23.141"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.141" endtime="20211101 23:20:23.141"/>
+</branch>
+<branch type="ELSE IF" condition="${NUMERO}==8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número:${NUMERO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211101 23:20:23.142" endtime="20211101 23:20:23.142"/>
+</kw>
+<status status="NOT RUN" starttime="20211101 23:20:23.142" endtime="20211101 23:20:23.142"/>
+</branch>
+<status status="PASS" starttime="20211101 23:20:23.141" endtime="20211101 23:20:23.142"/>
+</if>
+<status status="PASS" starttime="20211101 23:20:23.140" endtime="20211101 23:20:23.142"/>
+</iter>
+<status status="PASS" starttime="20211101 23:20:23.115" endtime="20211101 23:20:23.142"/>
+</for>
+<status status="PASS" starttime="20211101 23:20:23.114" endtime="20211101 23:20:23.142"/>
+</kw>
+<tag>Listar</tag>
+<status status="PASS" starttime="20211101 23:20:23.113" endtime="20211101 23:20:23.143"/>
+</test>
+<doc>Aqui estarão presentes as resoluções de todos os exercícios da Prime Heroes
+É muito importante informarmos o propósito desse documento.</doc>
+<status status="PASS" starttime="20211101 23:20:22.820" endtime="20211101 23:20:23.148"/>
+</suite>
+<suite id="s1-s1-s2" name="Mobileautomation" source="C:\Users\willi\Desktop\PrimeHero - Curso\tests\mobileautomation.robot">
+<test id="s1-s1-s2-t1" name="Caso de Teste 01: Pesquisa canal &quot;Prime Experts&quot;">
+<kw name="Abrir app" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>udid=emulator-5554</arg>
+<arg>platformName=Android</arg>
+<arg>androidVersion=11</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211101 23:20:23.633" endtime="20211101 23:20:46.471"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:23.632" endtime="20211101 23:20:46.471"/>
+</kw>
+<kw name="Dado que o cliente esteja na página de Home">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211101 23:20:51.511" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211101 23:20:46.496" endtime="20211101 23:20:51.511"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/youtube_logo</arg>
+<arg>90</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:20:51.512" endtime="20211101 23:20:53.642"/>
+</kw>
+<kw name="Element Attribute Should Match" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Home"]</arg>
+<arg>selected</arg>
+<arg>true</arg>
+<doc>Verify that an attribute of an element matches the expected criteria.</doc>
+<msg timestamp="20211101 23:20:54.691" level="INFO">Element 'xpath=//android.widget.Button[@content-desc="Home"]' attribute 'selected' is 'true' </msg>
+<status status="PASS" starttime="20211101 23:20:53.643" endtime="20211101 23:20:54.692"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:46.495" endtime="20211101 23:20:54.692"/>
+</kw>
+<kw name="E pesquise um vídeo sobre &quot;Prime Experts&quot;" sourcename="E pesquise um vídeo sobre &quot;${BUSCA}&quot;">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Search</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:20:54.716" level="INFO">Clicking element 'accessibility_id=Search'.</msg>
+<status status="PASS" starttime="20211101 23:20:54.708" endtime="20211101 23:20:55.037"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=search_edit_text</arg>
+<arg>${BUSCA}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211101 23:20:55.043" level="INFO">Typing text 'Prime Experts' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20211101 23:20:55.037" endtime="20211101 23:20:58.163"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>66</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211101 23:20:58.164" endtime="20211101 23:20:59.579"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:54.707" endtime="20211101 23:20:59.580"/>
+</kw>
+<kw name="E acesse o canal da Prime">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil")]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:20:59.588" endtime="20211101 23:21:02.498"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil")]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:21:02.505" level="INFO">Clicking element 'xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil")]'.</msg>
+<status status="PASS" starttime="20211101 23:21:02.498" endtime="20211101 23:21:04.600"/>
+</kw>
+<status status="PASS" starttime="20211101 23:20:59.587" endtime="20211101 23:21:04.600"/>
+</kw>
+<kw name="Quando clicar em Inscrever-se">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup[@content-desc="Subscribe to Prime Control."]</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:21:04.602" endtime="20211101 23:21:44.654"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211101 23:21:49.669" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211101 23:21:44.654" endtime="20211101 23:21:49.669"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.view.ViewGroup[@content-desc="Subscribe to Prime Control."]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:21:49.675" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Subscribe to Prime Control."]'.</msg>
+<status status="PASS" starttime="20211101 23:21:49.669" endtime="20211101 23:21:50.433"/>
+</kw>
+<status status="PASS" starttime="20211101 23:21:04.601" endtime="20211101 23:21:50.435"/>
+</kw>
+<kw name="Então será apresentado como Inscrito.">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup[@content-desc="Unsubscribe from Prime Control."]</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:21:50.439" endtime="20211101 23:21:52.758"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.view.ViewGroup[@content-desc="Unsubscribe from Prime Control."]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:21:52.764" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Unsubscribe from Prime Control."]'.</msg>
+<status status="PASS" starttime="20211101 23:21:52.758" endtime="20211101 23:21:53.200"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=android:id/button1</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:21:53.200" endtime="20211101 23:21:54.089"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=android:id/button1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:21:54.096" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<status status="PASS" starttime="20211101 23:21:54.090" endtime="20211101 23:21:54.249"/>
+</kw>
+<status status="PASS" starttime="20211101 23:21:50.438" endtime="20211101 23:21:54.250"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211101 23:21:54.253" endtime="20211101 23:21:56.305"/>
+</kw>
+<tag>01</tag>
+<status status="PASS" starttime="20211101 23:20:23.631" endtime="20211101 23:21:56.311"/>
+</test>
+<test id="s1-s1-s2-t2" name="Caso de Teste 02: Logar no YouTube">
+<kw name="Abrir app" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>udid=emulator-5554</arg>
+<arg>platformName=Android</arg>
+<arg>androidVersion=11</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211101 23:21:56.316" endtime="20211101 23:22:16.374"/>
+</kw>
+<status status="PASS" starttime="20211101 23:21:56.315" endtime="20211101 23:22:16.374"/>
+</kw>
+<kw name="Logar no aplicativo com a conta x">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.widget.ImageView[@content-desc="Account"]</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:16.376" endtime="20211101 23:22:23.380"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.ImageView[@content-desc="Account"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:23.387" level="INFO">Clicking element '//android.widget.ImageView[@content-desc="Account"]'.</msg>
+<status status="PASS" starttime="20211101 23:22:23.380" endtime="20211101 23:22:24.006"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/switch_account</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:24.008" endtime="20211101 23:22:25.439"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/switch_account</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:25.445" level="INFO">Clicking element 'id=com.google.android.youtube:id/switch_account'.</msg>
+<status status="PASS" starttime="20211101 23:22:25.440" endtime="20211101 23:22:25.843"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/sign_out_footer</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:25.843" endtime="20211101 23:22:27.926"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/sign_out_footer</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:27.931" level="INFO">Clicking element 'id=com.google.android.youtube:id/sign_out_footer'.</msg>
+<status status="PASS" starttime="20211101 23:22:27.927" endtime="20211101 23:22:28.212"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211101 23:22:31.214" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211101 23:22:28.213" endtime="20211101 23:22:31.215"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.widget.ImageView[@content-desc="Account"]</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:31.215" endtime="20211101 23:22:33.910"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.ImageView[@content-desc="Account"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:33.914" level="INFO">Clicking element '//android.widget.ImageView[@content-desc="Account"]'.</msg>
+<status status="PASS" starttime="20211101 23:22:33.911" endtime="20211101 23:22:34.205"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:34.206" endtime="20211101 23:22:35.605"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:35.608" level="INFO">Clicking element 'id=com.google.android.youtube:id/button'.</msg>
+<status status="PASS" starttime="20211101 23:22:35.605" endtime="20211101 23:22:35.756"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.widget.RelativeLayout[@content-desc="Niedja Qa,No channel"]</arg>
+<arg>60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:35.756" endtime="20211101 23:22:37.053"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.RelativeLayout[@content-desc="Niedja Qa,No channel"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:37.056" level="INFO">Clicking element '//android.widget.RelativeLayout[@content-desc="Niedja Qa,No channel"]'.</msg>
+<status status="PASS" starttime="20211101 23:22:37.053" endtime="20211101 23:22:40.019"/>
+</kw>
+<status status="PASS" starttime="20211101 23:22:16.375" endtime="20211101 23:22:40.019"/>
+</kw>
+<kw name="Entrar no menu “Explorar”">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]</arg>
+<arg>30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:40.021" endtime="20211101 23:22:41.371"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:41.376" level="INFO">Clicking element '//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]'.</msg>
+<status status="PASS" starttime="20211101 23:22:41.371" endtime="20211101 23:22:41.673"/>
+</kw>
+<status status="PASS" starttime="20211101 23:22:40.020" endtime="20211101 23:22:41.674"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:41.677" endtime="20211101 23:22:43.594"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:22:43.594" endtime="20211101 23:22:44.977"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:22:44.978" endtime="20211101 23:22:46.321"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:22:46.321" endtime="20211101 23:22:47.681"/>
+</kw>
+<status status="PASS" starttime="20211101 23:22:41.676" endtime="20211101 23:22:47.681"/>
+</kw>
+<kw name="Clicar no vídeo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:22:47.683" endtime="20211101 23:22:48.150"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:22:48.153" level="INFO">Clicking element '//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]'.</msg>
+<status status="PASS" starttime="20211101 23:22:48.151" endtime="20211101 23:22:48.357"/>
+</kw>
+<status status="PASS" starttime="20211101 23:22:47.682" endtime="20211101 23:22:48.357"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211101 23:22:48.359" endtime="20211101 23:22:49.750"/>
+</kw>
+<tag>02</tag>
+<status status="PASS" starttime="20211101 23:21:56.313" endtime="20211101 23:22:49.758"/>
+</test>
+<test id="s1-s1-s2-t3" name="Caso de Teste 03: Usar método Swipe na tela">
+<kw name="Abrir app" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>udid=emulator-5554</arg>
+<arg>platformName=Android</arg>
+<arg>androidVersion=11</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211101 23:22:49.772" endtime="20211101 23:23:10.416"/>
+</kw>
+<status status="PASS" starttime="20211101 23:22:49.771" endtime="20211101 23:23:10.417"/>
+</kw>
+<kw name="Entrar no menu “Explorar”">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]</arg>
+<arg>30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:10.469" endtime="20211101 23:23:20.768"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:23:20.773" level="INFO">Clicking element '//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]'.</msg>
+<status status="PASS" starttime="20211101 23:23:20.768" endtime="20211101 23:23:22.714"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:10.469" endtime="20211101 23:23:22.715"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:22.718" endtime="20211101 23:23:24.594"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:23:24.594" endtime="20211101 23:23:27.003"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:23:27.003" endtime="20211101 23:23:28.689"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>473</arg>
+<arg>1890</arg>
+<arg>493</arg>
+<arg>415</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211101 23:23:28.689" endtime="20211101 23:23:30.125"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:22.717" endtime="20211101 23:23:30.125"/>
+</kw>
+<kw name="Clicar no vídeo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:30.130" endtime="20211101 23:23:33.141"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211101 23:23:33.147" level="INFO">Clicking element '//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]'.</msg>
+<status status="PASS" starttime="20211101 23:23:33.141" endtime="20211101 23:23:35.097"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:30.129" endtime="20211101 23:23:35.098"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211101 23:23:35.103" endtime="20211101 23:23:37.101"/>
+</kw>
+<tag>03</tag>
+<status status="PASS" starttime="20211101 23:22:49.766" endtime="20211101 23:23:37.106"/>
+</test>
+<doc>Aqui neste arquivo estarão presentes os cenários e keywords que dizem respeito
+a automação mobile</doc>
+<status status="PASS" starttime="20211101 23:20:23.152" endtime="20211101 23:23:37.110"/>
+</suite>
+<suite id="s1-s1-s3" name="Webautomation" source="C:\Users\willi\Desktop\PrimeHero - Curso\tests\webautomation.robot">
+<test id="s1-s1-s3-t1" name="Caso de Teste 01: Pesquisar Produto Existente">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 23:23:38.609" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20211101 23:23:38.609" endtime="20211101 23:23:40.958"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211101 23:23:40.958" endtime="20211101 23:23:41.095"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:38.608" endtime="20211101 23:23:41.097"/>
+</kw>
+<kw name="Acessar a página home do site Automation Practice">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211101 23:23:41.101" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20211101 23:23:41.100" endtime="20211101 23:23:45.437"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211101 23:23:45.449" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211101 23:23:45.438" endtime="20211101 23:23:45.449"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=block_top_menu</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:45.450" endtime="20211101 23:23:45.502"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:41.099" endtime="20211101 23:23:45.503"/>
+</kw>
+<kw name="Digitar o nome do produto &quot;Blouse&quot; no campo de pesquisa" sourcename="Digitar o nome do produto &quot;${PRODUTO}&quot; no campo de pesquisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=search_query_top</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:23:45.506" level="INFO">Typing text 'Blouse' into text field 'id=search_query_top'.</msg>
+<status status="PASS" starttime="20211101 23:23:45.505" endtime="20211101 23:23:45.731"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:45.504" endtime="20211101 23:23:45.732"/>
+</kw>
+<kw name="Clicar no botão pesquisar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@name='submit_search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:23:45.737" level="INFO">Clicking element 'xpath=//*[@name='submit_search']'.</msg>
+<status status="PASS" starttime="20211101 23:23:45.736" endtime="20211101 23:23:45.892"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:45.735" endtime="20211101 23:23:45.893"/>
+</kw>
+<kw name="Conferir se o produto &quot;Blouse&quot; foi listado no site" sourcename="Conferir se o produto &quot;${PRODUTO}&quot; foi listado no site">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=center_column</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:45.902" endtime="20211101 23:23:46.919"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Search - My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211101 23:23:46.927" level="INFO">Page title is 'Search - My Store'.</msg>
+<status status="PASS" starttime="20211101 23:23:46.920" endtime="20211101 23:23:46.928"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>xpath=//*[@src='http://automationpractice.com/img/p/7/7-home_default.jpg']</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211101 23:23:46.967" level="INFO">Current page contains image 'xpath=//*[@src='http://automationpractice.com/img/p/7/7-home_default.jpg']'.</msg>
+<status status="PASS" starttime="20211101 23:23:46.928" endtime="20211101 23:23:46.968"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:45.901" endtime="20211101 23:23:46.968"/>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 23:23:47.218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 23:23:46.970" endtime="20211101 23:23:47.218"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211101 23:23:47.218" endtime="20211101 23:23:49.659"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:46.969" endtime="20211101 23:23:49.660"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:38.606" endtime="20211101 23:23:49.661"/>
+</test>
+<test id="s1-s1-s3-t2" name="Caso de teste 02: Produto não-existente">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 23:23:49.666" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20211101 23:23:49.665" endtime="20211101 23:23:51.825"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211101 23:23:51.825" endtime="20211101 23:23:51.964"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:49.664" endtime="20211101 23:23:51.965"/>
+</kw>
+<kw name="Acessar a página home do site Automation Practice">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211101 23:23:51.970" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20211101 23:23:51.969" endtime="20211101 23:23:56.084"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211101 23:23:56.095" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211101 23:23:56.085" endtime="20211101 23:23:56.096"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=block_top_menu</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:56.096" endtime="20211101 23:23:56.149"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:51.968" endtime="20211101 23:23:56.150"/>
+</kw>
+<kw name="Digitar o nome do produto &quot;itemNãoExistente&quot; no campo de pesquisa" sourcename="Digitar o nome do produto &quot;${PRODUTO}&quot; no campo de pesquisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=search_query_top</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:23:56.153" level="INFO">Typing text 'itemNãoExistente' into text field 'id=search_query_top'.</msg>
+<status status="PASS" starttime="20211101 23:23:56.151" endtime="20211101 23:23:56.376"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:56.151" endtime="20211101 23:23:56.376"/>
+</kw>
+<kw name="Clicar no botão pesquisar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@name='submit_search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:23:56.380" level="INFO">Clicking element 'xpath=//*[@name='submit_search']'.</msg>
+<status status="PASS" starttime="20211101 23:23:56.379" endtime="20211101 23:23:57.629"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:56.378" endtime="20211101 23:23:57.629"/>
+</kw>
+<kw name="Conferir mensagem &quot;No results were found for your search&quot;" sourcename="Conferir mensagem &quot;${mensagem}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'${mensagem}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:23:57.631" endtime="20211101 23:23:57.686"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:57.630" endtime="20211101 23:23:57.686"/>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 23:23:57.846" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 23:23:57.688" endtime="20211101 23:23:57.846"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211101 23:23:57.847" endtime="20211101 23:24:00.156"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:57.687" endtime="20211101 23:24:00.156"/>
+</kw>
+<status status="PASS" starttime="20211101 23:23:49.663" endtime="20211101 23:24:00.157"/>
+</test>
+<test id="s1-s1-s3-t3" name="Caso de teste 03: Listar Produtos">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 23:24:00.162" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20211101 23:24:00.162" endtime="20211101 23:24:02.389"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211101 23:24:02.390" endtime="20211101 23:24:02.538"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:00.161" endtime="20211101 23:24:02.539"/>
+</kw>
+<kw name="Acessar a página home do site Automation Practice">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211101 23:24:02.542" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20211101 23:24:02.541" endtime="20211101 23:24:07.086"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211101 23:24:07.099" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211101 23:24:07.086" endtime="20211101 23:24:07.100"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=block_top_menu</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:24:07.100" endtime="20211101 23:24:07.148"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:02.540" endtime="20211101 23:24:07.149"/>
+</kw>
+<kw name="Passar o mouse por cima da categoria &quot;Women&quot; no menu principal superior de categorias">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[text()='Women'][@title='Women']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20211101 23:24:07.151" level="INFO">Simulating Mouse Over on element '//*[text()='Women'][@title='Women']'.</msg>
+<status status="PASS" starttime="20211101 23:24:07.150" endtime="20211101 23:24:07.522"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:07.150" endtime="20211101 23:24:07.523"/>
+</kw>
+<kw name="Clicar na sub categoria &quot;Summer Dresses&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//*[text( )='Summer Dresses'][@title='Summer Dresses'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:07.525" level="INFO">Clicking element '(//*[text( )='Summer Dresses'][@title='Summer Dresses'])[1]'.</msg>
+<status status="PASS" starttime="20211101 23:24:07.525" endtime="20211101 23:24:09.648"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:07.524" endtime="20211101 23:24:09.649"/>
+</kw>
+<kw name="Conferir se os produtos da sub-categoria &quot;Summer Dresses&quot; foram mostrados na página">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[contains(text(),'Summer Dresses ')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:24:09.650" endtime="20211101 23:24:09.712"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:09.649" endtime="20211101 23:24:09.713"/>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 23:24:10.068" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 23:24:09.715" endtime="20211101 23:24:10.068"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211101 23:24:10.068" endtime="20211101 23:24:12.378"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:09.714" endtime="20211101 23:24:12.378"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:00.159" endtime="20211101 23:24:12.379"/>
+</test>
+<test id="s1-s1-s3-t4" name="Caso de teste 04: Adicionar cliente">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 23:24:12.385" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20211101 23:24:12.384" endtime="20211101 23:24:14.533"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211101 23:24:14.534" endtime="20211101 23:24:14.685"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:12.383" endtime="20211101 23:24:14.685"/>
+</kw>
+<kw name="Acessar a página home do site Automation Practice">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211101 23:24:14.690" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20211101 23:24:14.689" endtime="20211101 23:24:19.006"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211101 23:24:19.019" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211101 23:24:19.006" endtime="20211101 23:24:19.019"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=block_top_menu</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:24:19.020" endtime="20211101 23:24:19.072"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:14.686" endtime="20211101 23:24:19.073"/>
+</kw>
+<kw name="Clicar em &quot;Sign in&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@title='Log in to your customer account']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:19.075" level="INFO">Clicking element '//a[@title='Log in to your customer account']'.</msg>
+<status status="PASS" starttime="20211101 23:24:19.074" endtime="20211101 23:24:20.879"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:19.074" endtime="20211101 23:24:20.880"/>
+</kw>
+<kw name="Informar um email válido">
+<kw name="Email" library="FakerLibrary">
+<var>${EMAILFAKE}</var>
+<msg timestamp="20211101 23:24:20.885" level="INFO">${EMAILFAKE} = collinstracy@example.com</msg>
+<status status="PASS" starttime="20211101 23:24:20.883" endtime="20211101 23:24:20.885"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email_create</arg>
+<arg>${EMAILFAKE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:20.886" level="INFO">Typing text 'collinstracy@example.com' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20211101 23:24:20.885" endtime="20211101 23:24:21.164"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:20.882" endtime="20211101 23:24:21.165"/>
+</kw>
+<kw name="Clicar em &quot;Create an account&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=SubmitCreate</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:21.168" level="INFO">Clicking element 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20211101 23:24:21.167" endtime="20211101 23:24:21.299"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:21.166" endtime="20211101 23:24:21.299"/>
+</kw>
+<kw name="Preencher os dados obrigatórios">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_gender2']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:24:21.303" endtime="20211101 23:24:22.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_gender2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:22.690" level="INFO">Clicking element 'xpath=//input[@id='id_gender2']'.</msg>
+<status status="PASS" starttime="20211101 23:24:22.689" endtime="20211101 23:24:22.791"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=customer_firstname</arg>
+<arg>Niêdja</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:22.792" level="INFO">Typing text 'Niêdja' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20211101 23:24:22.791" endtime="20211101 23:24:23.000"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=customer_lastname</arg>
+<arg>Souza</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:23.001" level="INFO">Typing text 'Souza' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20211101 23:24:23.000" endtime="20211101 23:24:23.210"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=passwd</arg>
+<arg>Wn.85994512</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:23.212" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<msg timestamp="20211101 23:24:23.386" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211101 23:24:23.513" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211101 23:24:23.211" endtime="20211101 23:24:23.513"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=days</arg>
+<arg>26</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211101 23:24:23.514" level="INFO">Selecting options from selection list 'id=days' by value 26.</msg>
+<status status="PASS" starttime="20211101 23:24:23.513" endtime="20211101 23:24:23.673"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=months</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211101 23:24:23.674" level="INFO">Selecting options from selection list 'id=months' by value 6.</msg>
+<status status="PASS" starttime="20211101 23:24:23.673" endtime="20211101 23:24:23.847"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=years</arg>
+<arg>1987</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211101 23:24:23.848" level="INFO">Selecting options from selection list 'id=years' by value 1987.</msg>
+<status status="PASS" starttime="20211101 23:24:23.847" endtime="20211101 23:24:23.983"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=newsletter</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:23.984" level="INFO">Clicking element 'id=newsletter'.</msg>
+<status status="PASS" starttime="20211101 23:24:23.983" endtime="20211101 23:24:24.081"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=firstname</arg>
+<arg>Niêdja</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.082" level="INFO">Typing text 'Niêdja' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.082" endtime="20211101 23:24:24.253"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=lastname</arg>
+<arg>Souza</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.254" level="INFO">Typing text 'Souza' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.253" endtime="20211101 23:24:24.435"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=company</arg>
+<arg>Prime Control</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.435" level="INFO">Typing text 'Prime Control' into text field 'id=company'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.435" endtime="20211101 23:24:24.617"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=address1</arg>
+<arg>Rua Japão, 123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.618" level="INFO">Typing text 'Rua Japão, 123' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.617" endtime="20211101 23:24:24.812"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=address2</arg>
+<arg>Bloco H</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.813" level="INFO">Typing text 'Bloco H' into text field 'id=address2'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.812" endtime="20211101 23:24:24.993"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=city</arg>
+<arg>Curitiba</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:24.995" level="INFO">Typing text 'Curitiba' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20211101 23:24:24.994" endtime="20211101 23:24:25.171"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=id_state</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211101 23:24:25.172" level="INFO">Selecting options from selection list 'id=id_state' by value 1.</msg>
+<status status="PASS" starttime="20211101 23:24:25.171" endtime="20211101 23:24:25.313"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=postcode</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:25.314" level="INFO">Typing text '12345' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20211101 23:24:25.313" endtime="20211101 23:24:25.508"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=id_country</arg>
+<arg>21</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211101 23:24:25.509" level="INFO">Selecting options from selection list 'id=id_country' by value 21.</msg>
+<status status="PASS" starttime="20211101 23:24:25.509" endtime="20211101 23:24:25.595"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=phone</arg>
+<arg>3377-9951</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:25.596" level="INFO">Typing text '3377-9951' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20211101 23:24:25.596" endtime="20211101 23:24:25.776"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=alias</arg>
+<arg>Rua das Alianças,345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:25.778" level="INFO">Typing text 'Rua das Alianças,345' into text field 'id=alias'.</msg>
+<status status="PASS" starttime="20211101 23:24:25.777" endtime="20211101 23:24:25.986"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:21.302" endtime="20211101 23:24:25.986"/>
+</kw>
+<kw name="Submeter cadastro">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=submitAccount</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211101 23:24:25.989" level="INFO">Clicking element 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20211101 23:24:25.988" endtime="20211101 23:24:27.629"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:25.987" endtime="20211101 23:24:27.629"/>
+</kw>
+<kw name="Conferir se o cadastro foi efetuado com sucesso">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Welcome to')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211101 23:24:27.632" endtime="20211101 23:24:27.703"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:27.631" endtime="20211101 23:24:27.704"/>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 23:24:27.999" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 23:24:27.707" endtime="20211101 23:24:27.999"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211101 23:24:28.000" endtime="20211101 23:24:30.294"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:27.706" endtime="20211101 23:24:30.294"/>
+</kw>
+<status status="PASS" starttime="20211101 23:24:12.381" endtime="20211101 23:24:30.295"/>
+</test>
+<doc>Aqui estarão todos os testes Web do curso Prime Hero.
+A ideia e criarmos cenários de verificação com a library Selenium.</doc>
+<status status="PASS" starttime="20211101 23:23:37.117" endtime="20211101 23:24:30.298"/>
+</suite>
+<status status="PASS" starttime="20211101 23:20:22.814" endtime="20211101 23:24:30.305"/>
+</suite>
+<status status="PASS" starttime="20211101 23:20:22.766" endtime="20211101 23:24:30.312"/>
+</suite>
+<statistics>
+<total>
+<stat pass="17" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">01</stat>
+<stat pass="1" fail="0" skip="0">02</stat>
+<stat pass="1" fail="0" skip="0">03</stat>
+<stat pass="1" fail="0" skip="0">CARRO</stat>
+<stat pass="1" fail="0" skip="0">CONTAR</stat>
+<stat pass="1" fail="0" skip="0">Criar</stat>
+<stat pass="1" fail="0" skip="0">EMAIL</stat>
+<stat pass="1" fail="0" skip="0">FRUTAS</stat>
+<stat pass="1" fail="0" skip="0">LISTA</stat>
+<stat pass="1" fail="0" skip="0">Listar</stat>
+<stat pass="1" fail="0" skip="0">PAÍSES</stat>
+<stat pass="1" fail="0" skip="0">SOMA</stat>
+</tag>
+<suite>
+<stat pass="17" fail="0" skip="0" id="s1" name="PrimeHero - Curso">PrimeHero - Curso</stat>
+<stat pass="17" fail="0" skip="0" id="s1-s1" name="Tests">PrimeHero - Curso.Tests</stat>
+<stat pass="10" fail="0" skip="0" id="s1-s1-s1" name="Exercicios">PrimeHero - Curso.Tests.Exercicios</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1-s2" name="Mobileautomation">PrimeHero - Curso.Tests.Mobileautomation</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s3" name="Webautomation">PrimeHero - Curso.Tests.Webautomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
